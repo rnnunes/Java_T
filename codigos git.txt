@@ -1,0 +1,16 @@
+codigos git
+
+local -> github
+
+git init
+git remote add origin <link do repositório>
+git add .
+git add <nome do arquivo>
+git commit -m “coloque aqui o nome que desejar”
+git branch -M main
+git push origin main
+
+
+github -> local
+
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
