@@ -13,4 +13,6 @@ git push origin main
 
 github -> local
 
+git pull origin main
+
 git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
