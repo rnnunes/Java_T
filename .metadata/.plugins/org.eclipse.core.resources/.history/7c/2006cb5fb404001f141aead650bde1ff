@@ -23,25 +23,13 @@ public class Vect_02 {
 			System.out.printf("%nNome: ");
 			String name = sc.next();
 			
-			System.out.printf("Idade: ");
+			System.out.printf("%nIdade: ");
 			int idade = sc.nextInt();
 
-			System.out.printf("Altura: ");
+			System.out.printf("%nAltura: ");
 			double alt = sc.nextDouble();
 			vect[i] = new Entities_Ex02(name, idade, alt);
 		}
-		
-		double sum = 0;
-		for (int i = 0; i < vect.length ; i++ ) {	
-				sum += vect[i].getIdade();
-			
-		}
-		
-		System.out.println("Altura Média das Pessoas: " + sum/num_people);
-		System.out.println("Percentual de pessoas que tem menos de 16 anos: ");
-		
-		for (int contagem : ) {
-				if (vect )
-		}
 	}
+
 }

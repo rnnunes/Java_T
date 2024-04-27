@@ -8,9 +8,13 @@
     <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
     <fullyQualifiedTypeName name="entities.Conversor"/>
     <fullyQualifiedTypeName name="entities.Product"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.parser.Entity"/>
+    <fullyQualifiedTypeName name="entities.Entities"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="entities.Entities"/>
+    <fullyQualifiedTypeName name="course.Vect_02"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="entities.Entities_Ex02"/>
 </qualifiedTypeNameHistroy>
