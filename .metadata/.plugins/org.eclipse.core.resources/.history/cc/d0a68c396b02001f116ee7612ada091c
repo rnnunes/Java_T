@@ -1,0 +1,39 @@
+package course;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Entities;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Entre com o Numero da conta: ");
+		int conta = sc.nextInt();
+
+		System.out.printf("Entre com o nome do Usuario: ");
+		String usuario = sc.next();
+
+		System.out.printf("Haverá um deposito inicial? (y/n) ");
+		String resp = sc.next();
+
+		if (resp == "y") {
+			System.out.printf("Entre com o valor inicial do deposito: ");
+//			double ini_deposito = sc.nextDouble();
+		}
+//		} else if (resp !="n") {
+//			
+//		} else {
+//			System.out.println("Resposta Invalida!");
+//		}
+
+		Entities entities = new Entities(conta, usuario, resp);
+
+		System.out.println(entities.getConta());
+
+	}
+
+}

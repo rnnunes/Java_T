@@ -1,0 +1,35 @@
+package entities;
+
+public class Entities {
+
+	// Atributos
+	private int conta;
+	private String usuario;
+	private String resp;
+	private double saldo;
+
+	// Construtores
+	public Entities(int conta, String usuario, String resp, double saldo) {
+		this.conta = conta;
+		this.usuario = usuario;
+		this.resp = resp;
+		this.saldo = saldo;
+	}
+
+	// Encapsulamento
+	public int getConta() {
+		return conta;
+	}
+	
+	public String getUsuario() {
+		return usuario;
+	}
+	
+	public double getSaldo() {
+		return saldo;
+	}
+
+	// Metodos
+
+ 	
+}

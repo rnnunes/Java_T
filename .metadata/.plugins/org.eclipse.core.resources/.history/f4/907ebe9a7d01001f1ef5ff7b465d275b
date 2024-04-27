@@ -1,0 +1,11 @@
+package entities;
+
+public class Retangulo {
+	
+	public double base;
+	public double alt;
+	
+	public double area() {
+		return base * alt;
+	}
+}

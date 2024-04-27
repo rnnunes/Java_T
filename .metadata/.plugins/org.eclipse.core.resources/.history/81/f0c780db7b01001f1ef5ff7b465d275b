@@ -1,0 +1,18 @@
+package course;
+
+import java.util.Scanner;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Entre com a Largura e Altura do Retangulo Respectivamente: ");
+		double larg = sc.nextDouble();
+		double alt = sc.nextDouble();
+		
+		System.out.println("Area = " + larg * alt);
+	}
+
+}

@@ -1,0 +1,16 @@
+package entities;
+
+public class Employee {
+
+	public String name;
+	public double salGrosso;
+	public double tax;
+	
+	public double salLiq() {
+		return salGrosso - tax;
+	}
+	
+	public double aumentoSal(double percent) {
+		return ((percent/100) * salGrosso) + salLiq();
+	}
+}
