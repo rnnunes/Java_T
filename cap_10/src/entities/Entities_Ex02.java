@@ -17,4 +17,14 @@ public class Entities_Ex02 {
 	public int getIdade() {
 		return idade;
 	}
+	
+	public double getAlt() {
+		return alt;
+	}
+	
+	public String getName () {
+		return name;
+		
+	}
 }
+ 

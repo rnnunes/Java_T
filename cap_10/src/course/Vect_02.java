@@ -19,7 +19,7 @@ public class Vect_02 {
 		Entities_Ex02[] vect = new Entities_Ex02[num_people];
 		
 		for (int i = 0; i < vect.length; i ++) {
-			System.out.printf("Dados da %d° pessoa:", i);
+			System.out.printf("Dados da %d° pessoa:", i + 1);
 			System.out.printf("%nNome: ");
 			String name = sc.next();
 			
@@ -33,15 +33,26 @@ public class Vect_02 {
 		
 		double sum = 0;
 		for (int i = 0; i < vect.length ; i++ ) {	
-				sum += vect[i].getIdade();
+				sum += vect[i].getAlt();
 			
 		}
 		
-		System.out.println("Altura Média das Pessoas: " + sum/num_people);
-		System.out.println("Percentual de pessoas que tem menos de 16 anos: ");
-		
-		for (int contagem : ) {
-				if (vect )
+		int count = 0;
+		for (int i = 0; i < vect.length ; i ++) {
+				if (vect[i].getIdade() < 16) {
+					count += count + 1;
+				}
 		}
+		
+		double perc = (count * 100) / num_people;
+		System.out.printf("%nAltura Média das Pessoas: %.2f", sum/num_people);
+		System.out.printf("%nPercentual de pessoas que tem menos de 16 anos: %.1f%% %n", perc);
+		
+		for (int i = 0; i < vect.length ; i ++) {
+			if (vect[i].getIdade() < 16) {
+					System.out.println(vect[i].getName());
+			}
+		}
+		
 	}
 }
