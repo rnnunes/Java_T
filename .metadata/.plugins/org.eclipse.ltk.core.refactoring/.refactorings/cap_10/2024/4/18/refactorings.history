@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;course.Ex04&apos; to &apos;Vect_03&apos;&#x0D;&#x0A;- Original project: &apos;cap_10&apos;&#x0D;&#x0A;- Original element: &apos;course.Ex04&apos;&#x0D;&#x0A;- Renamed element: &apos;course.Vect_03&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Ex04&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;course{Ex04.java[Ex04" matchStrategy="1" name="Vect_03" qualified="false" references="true" similarDeclarations="false" stamp="1714419273742" textual="false" version="1.0"/>
+</session>
