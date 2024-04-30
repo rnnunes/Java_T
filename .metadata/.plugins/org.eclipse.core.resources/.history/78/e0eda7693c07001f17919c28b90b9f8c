@@ -19,8 +19,6 @@ public class Vect_03 {
 
 		System.out.println(vect);
 		System.out.println(vect.toString());
-		
-		sc.close();
 	}
 
 }
