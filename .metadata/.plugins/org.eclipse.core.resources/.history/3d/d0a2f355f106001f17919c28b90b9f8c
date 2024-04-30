@@ -18,7 +18,7 @@ public class Vect_03 {
 		Entities_ex03 vect = new Entities_ex03("teste", "testeboy");
 
 		System.out.println(vect);
-		System.out.println(vect.toString());
+		System.out.println(vect.getName());
 	}
 
 }

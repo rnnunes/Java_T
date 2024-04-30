@@ -15,10 +15,8 @@ public class Vect_03 {
 		System.out.println("Quantos Quartos pretende alugar? ");
 		int num_quartos = sc.nextInt();
 		
-		Entities_ex03 vect = new Entities_ex03("teste", "testeboy");
+		Entities_ex03[] vect = new Entities_ex03[num_quartos];
 
-		System.out.println(vect);
-		System.out.println(vect.toString());
 	}
 
 }
