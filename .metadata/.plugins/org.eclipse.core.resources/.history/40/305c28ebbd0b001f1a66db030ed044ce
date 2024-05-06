@@ -1,0 +1,31 @@
+package course;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Lista {
+
+	public static void main(String[] args) {
+
+		List<String> list = new ArrayList<>(); // lista = interface
+		
+		list.add("Maria");
+		list.add("Alex");
+		list.add("Bob");
+		list.add("Anna");
+		list.add(2,"Marco");
+		
+		System.out.println(list.size());
+		
+		list.remove("Anna");
+		for (String x : list) { // for each
+			System.out.println(x);
+		}
+		
+	
+
+	}
+
+}
+
+

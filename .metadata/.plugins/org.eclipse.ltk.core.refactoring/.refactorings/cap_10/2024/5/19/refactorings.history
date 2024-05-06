@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;course.List&apos; to &apos;Lista&apos;&#x0D;&#x0A;- Original project: &apos;cap_10&apos;&#x0D;&#x0A;- Original element: &apos;course.List&apos;&#x0D;&#x0A;- Renamed element: &apos;course.Lista&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;List&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;course{List.java[List" matchStrategy="1" name="Lista" qualified="false" references="true" similarDeclarations="false" stamp="1715009044035" textual="false" version="1.0"/>
+</session>
