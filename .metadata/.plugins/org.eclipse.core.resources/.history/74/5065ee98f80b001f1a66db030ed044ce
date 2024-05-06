@@ -5,8 +5,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Entities_ex16;
-
 public class Ex16 {
 
 	public static void main(String[] args) {
@@ -14,37 +12,20 @@ public class Ex16 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Quantos Funcionarios irá resgistrar? ");
+		System.out.println("Quantos Funcionarios irá resgistrar?");
 		int num_func = sc.nextInt();
 		
 		List<Integer> list_id = new ArrayList<>();
 		List<String> list_name = new ArrayList<>();
 		List<Double> list_sal = new ArrayList<>();
 		
-		int id;
-		String name;
-		double sal;
-		
-		for	(int i = 0 ; i < num_func; i ++) {
-		
-		System.out.printf("Funcionario #%d", i + 1);
-		System.out.printf("%nId: ");
-		id = sc.nextInt();
-		System.out.printf("Nome: ");
-		name = sc.next();
-		System.out.printf("Salario: ");
-		sal = sc.nextDouble();
-		System.out.println();
+		int id = sc.nextInt();
+		String name = sc.next();
+		double sal = sc.nextDouble();
 		
 		list_id.add(id);
 		list_name.add(name);
 		list_sal.add(sal);
-		
-		}
-		
-		
-//		Entities_ex16 entities = new Entities_ex16(id, name, sal); 
-		
 		
 		
 		System.out.println("Funcionario # :");
@@ -55,7 +36,6 @@ public class Ex16 {
 		
 		sc.close();
 	}
-
 
 }
 

@@ -43,7 +43,7 @@ public class Ex16 {
 		}
 		
 		
-//		Entities_ex16 entities = new Entities_ex16(id, name, sal); 
+		Entities_ex16 entities = new Entities_ex16(id, name, sal); 
 		
 		
 		

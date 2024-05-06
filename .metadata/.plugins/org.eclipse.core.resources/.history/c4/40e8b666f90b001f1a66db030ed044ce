@@ -21,19 +21,16 @@ public class Ex16 {
 		List<String> list_name = new ArrayList<>();
 		List<Double> list_sal = new ArrayList<>();
 		
-		int id;
-		String name;
-		double sal;
 		
 		for	(int i = 0 ; i < num_func; i ++) {
 		
 		System.out.printf("Funcionario #%d", i + 1);
-		System.out.printf("%nId: ");
-		id = sc.nextInt();
-		System.out.printf("Nome: ");
-		name = sc.next();
-		System.out.printf("Salario: ");
-		sal = sc.nextDouble();
+		System.out.print("Id: ");
+		int id = sc.nextInt();
+		System.out.print("Nome: ");
+		String name = sc.next();
+		System.out.print("Salario: ");
+		double sal = sc.nextDouble();
 		System.out.println();
 		
 		list_id.add(id);
@@ -43,9 +40,7 @@ public class Ex16 {
 		}
 		
 		
-//		Entities_ex16 entities = new Entities_ex16(id, name, sal); 
-		
-		
+//		Entities_ex16()
 		
 		System.out.println("Funcionario # :");
 		System.out.println("Id: " + list_id + list_name + list_sal);
@@ -55,7 +50,6 @@ public class Ex16 {
 		
 		sc.close();
 	}
-
 
 }
 
