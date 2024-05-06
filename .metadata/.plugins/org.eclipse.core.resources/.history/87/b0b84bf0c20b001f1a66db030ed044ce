@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 public class Lista {
 
 	public static void main(String[] args) {
-		//aula 15 cap 10 
 
 		List<String> list = new ArrayList<>(); // lista = interface
 		
@@ -35,7 +34,7 @@ public class Lista {
 		
 		System.out.println("----------------------------------");
 		
-		System.out.println("Numero Intex do Bob = " + list.indexOf("Anna")); // se não tiver o nome ira retornar -1
+		System.out.println("Numero Intex do Bob = " + list.indexOf("Anna"));
 	
 		System.out.println("----------------------------------");
 		
@@ -44,12 +43,7 @@ public class Lista {
 		for (String x : result) {
 			System.out.println(x);
 		}
-		
-		System.out.println("----------------------------------");
 
-		String name = list.stream().filter(x -> x.charAt(0) == 'A').findFirst().orElse(null); // Encontrar o primeiro nome q começa quem a letra em questão neste caso o 'A'
-		
-		System.out.println(name);
 	}
 
 }
