@@ -30,14 +30,12 @@ public class Ex16 {
 		Double sal = sc.nextDouble();
 		System.out.println();
 		
+		
 		Entities_ex16 entities = new Entities_ex16(id, name, sal);
 		
 		list.add(entities);
 		
 		}
-		
-		System.out.print("Funcionario que ira receber um aumento: ");
-		int idsalario = sc.nextInt();
 	
 		
 		System.out.println("Funcionario # :");

@@ -17,36 +17,45 @@ public class Ex16 {
 		System.out.print("Quantos Funcionarios irá resgistrar? ");
 		int num_func = sc.nextInt();
 		
-		List<Entities_ex16> list = new ArrayList<>();
+		List<Integer> list_id = new ArrayList<>();
+		List<String> list_name = new ArrayList<>();
+		List<Double> list_sal = new ArrayList<>();
+		
+		int id;
+		String name;
+		double sal;
 		
 		for	(int i = 0 ; i < num_func; i ++) {
 		
 		System.out.printf("Funcionario #%d", i + 1);
 		System.out.printf("%nId: ");
-		Integer id = sc.nextInt();
+		id = sc.nextInt();
 		System.out.printf("Nome: ");
-		String name = sc.next();
+		name = sc.next();
 		System.out.printf("Salario: ");
-		Double sal = sc.nextDouble();
+		sal = sc.nextDouble();
 		System.out.println();
 		
-		Entities_ex16 entities = new Entities_ex16(id, name, sal);
-		
-		list.add(entities);
+		list_id.add(id);
+		list_name.add(name);
+		list_sal.add(sal);
 		
 		}
 		
-		System.out.print("Funcionario que ira receber um aumento: ");
-		int idsalario = sc.nextInt();
-	
+		
+//		Entities_ex16 entities = new Entities_ex16(id, name, sal); 
+		
+		
 		
 		System.out.println("Funcionario # :");
-		System.out.println("Id: " + list);
+		System.out.println("Id: " + list_id + list_name + list_sal);
+		
+		
 		
 		
 		sc.close();
 	}
 
 
-
 }
+

@@ -28,8 +28,4 @@ public class Entities_ex16 {
 		return salario;
 	}
 	
-	public void AumSal(double percent){
-		salario  += salario * percent / 100;
-	}
-	
 }
