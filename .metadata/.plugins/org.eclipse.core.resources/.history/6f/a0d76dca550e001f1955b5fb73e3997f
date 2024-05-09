@@ -46,10 +46,7 @@ public class Ex16 {
 		
 		sc.close();
 	}
-	
-	public Integer possuiId(List<Entities_ex16> list, int id) {
-		
-	}
+
 
 
 }

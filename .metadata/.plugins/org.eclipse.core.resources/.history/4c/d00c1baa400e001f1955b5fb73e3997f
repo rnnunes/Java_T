@@ -2,9 +2,9 @@ package entities;
 
 public class Entities_ex16 {
 	//Atributos
-	private Integer id;
+	private int id;
 	private String name;
-	private Double salario;
+	private double salario;
 	
 	
 	//Construtor
