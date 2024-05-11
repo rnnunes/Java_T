@@ -45,12 +45,12 @@ public class Ex16 {
 			System.out.println("Entre com a Porcentagem: ");
 			double percent = sc.nextDouble();
 			list.get(pos).AumSal(percent);
-			
-			
-			System.out.println("Funcionario # :");
-			for (Entities_ex16 emp : list) {
-				System.out.println(emp);
-			}
+			;
+		}
+
+		System.out.println("Funcionario # :");
+		for (Entities_ex16 emp : list) {
+			System.out.println(emp);
 		}
 
 		sc.close();

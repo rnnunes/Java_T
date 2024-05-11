@@ -31,12 +31,5 @@ public class Entities_ex16 {
 	public void AumSal(double percent){
 		salario  += salario * percent / 100;
 	}
-
-	@Override
-	public String toString() {
-		return "id=" + id + ", name=" + name + ", salario=" + String.format("%.2f.", salario);
-	}
-	
-	
 	
 }

@@ -1,0 +1,55 @@
+package course;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Entities_ex16;
+
+public class Ex16 {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Quantos Funcionarios irá resgistrar? ");
+		int num_func = sc.nextInt();
+		
+		List<Entities_ex16> list = new ArrayList<>();
+		
+		for	(int i = 0 ; i < num_func; i ++) {
+		
+		System.out.printf("Funcionario #%d", i + 1);
+		System.out.printf("%nId: ");
+		Integer id = sc.nextInt();
+		System.out.printf("Nome: ");
+		String name = sc.next();
+		System.out.printf("Salario: ");
+		Double sal = sc.nextDouble();
+		System.out.println();
+		
+		Entities_ex16 entities = new Entities_ex16(id, name, sal);
+		
+		list.add(entities);
+		
+		}
+		
+		System.out.print("Funcionario que ira receber um aumento: ");
+		int idsalario = sc.nextInt();
+	
+		
+		System.out.println("Funcionario # :");
+		System.out.println("Id: " + list);
+		
+		
+		sc.close();
+	}
+	
+	public Integer possuiId(List<Entities_ex16> list, int id) {
+		
+	}
+
+
+}
