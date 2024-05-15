@@ -43,7 +43,7 @@ public class Worker {
 		return baseSalary;
 	}
 
-	public Departament departament() {
+	public Departament getDepartament() {
 		return departament;
 	}
 
@@ -100,6 +100,10 @@ public class Worker {
 		}
 		return sum;
 
+	}
+	
+	public String toString() {
+		return "Nome: " + name;
 	}
 
 }
