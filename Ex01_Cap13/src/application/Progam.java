@@ -42,7 +42,7 @@ public class Progam {
 
 		for (int i = 0; i < n; i++) {
 			System.out.printf("Entre com o Contrato #%d ", i + 1);
-			System.out.print("Data (DD/MMD/YYYY): ");
+			System.out.print("Data (DD/MM/YYYY): ");
 			Date ContractDate = sdf.parse(sc.next());
 
 			System.out.print("Valor por Hora: ");
