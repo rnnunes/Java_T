@@ -1,61 +1,94 @@
 package entities;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import entities.enums.OrderStatus;
 
 public class Order {
 
-	//atributos
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
+	// atributos
 	private Date moment;
 	private OrderStatus status;
-	
-	
-	//construtores
+
+	// Associações
+	private Client client;
+	private List<OrderItem> ordens = new ArrayList<OrderItem>();
+
+	// construtores
 	public Order() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	public Order(Date moment, OrderStatus status) {
+
+	public Order(Date moment, OrderStatus status, Client client) {
 		this.moment = moment;
 		this.status = status;
 	}
-	
-	//encapsulamento
-	
+
+	// encapsulamento
+
 	public Date getMoment() {
 		return moment;
 	}
-	
+
 	public OrderStatus getStatus() {
 		return status;
 	}
-	
+
 	public void setMoment(Date moment) {
 		this.moment = moment;
 	}
-	
+
 	public void setStatus(OrderStatus status) {
 		this.status = status;
 	}
-	
-	//metodos
-	
-	public void addItem() {
-		
-	}
-	
-	public void removeItem() {
-		
-	}
-	
-	public Double total() {
-		return
-	}
-	
-	
-	
-	
-	
-}
 
+	public Client getClient() {
+		return client;
+	}
+
+	public void setClient(Client client) {
+		this.client = client;
+	}
+
+	// metodos
+
+	public void addItem(OrderItem item) {
+		ordens.add(item);
+	}
+
+	public void removeItem(OrderItem item) {
+		ordens.remove(item);
+	}
+
+	public double total() {
+		double sum = 0.0;
+		for (OrderItem it : ordens) {
+			sum += it.subTotal();
+		}
+		return sum;
+	}
+
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Resumo de Ordem: \n");
+		sb.append(sdf.format("Momento do Pedido: " + moment) + "\n");
+		sb.append("Status do Pedido: " + getStatus());
+		sb.append(client.toString());
+		sb.append("Itens do Pedido: ");
+		sb.append(ordens.toString());
+		
+		for (OrderItem or : ordens) {
+			sb.append(or.toString());
+		}
+		
+		sb.append(total());
+		
+		return sb.toString();
+	}
+
+}
