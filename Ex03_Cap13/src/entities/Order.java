@@ -9,7 +9,7 @@ import entities.enums.OrderStatus;
 
 public class Order {
 
-	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
 	// atributos
 	private Date moment;
@@ -73,20 +73,21 @@ public class Order {
 		return sum;
 	}
 
+	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("Resumo de Ordem: \n");
-		sb.append(sdf.format("Momento do Pedido: " + moment) + "\n");
-		sb.append("Status do Pedido: " + getStatus());
-		sb.append(client.toString());
-		sb.append("Itens do Pedido: ");
-		sb.append(ordens.toString());
+		sb.append("Momento do Pedido: " + sdf.format(moment) + "\n");
+		sb.append("Status do Pedido: " + status);
+		sb.append(client + "\n");
+		sb.append("Itens do Pedido: \n");
 		
-		for (OrderItem or : ordens) {
-			sb.append(or.toString());
+		for (OrderItem item : ordens) {
+			sb.append(item + "\n");
 		}
 		
-		sb.append(total());
+		sb.append("Total Valor: $");
+		sb.append(String.format("%.2f", total()));
 		
 		return sb.toString();
 	}

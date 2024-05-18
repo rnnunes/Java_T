@@ -50,6 +50,7 @@ public class Client {
 		this.birthDate = birthDate;
 	}
 	
+	//metodos
 	public String toString() {
 		return "Cliente: " + getName() + " (" + sdf.format(getBirthDate()) + ") - " + getEmail();
 	}
