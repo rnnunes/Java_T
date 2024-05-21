@@ -6,7 +6,7 @@ public class Product {
 	private String name;
 	protected Double price;
 
-	//construtores
+	// construtores
 	public Product() {
 		// TODO Auto-generated constructor stub
 	}
@@ -16,31 +16,28 @@ public class Product {
 		this.price = price;
 	}
 
-	//encapsulamento
-	
+	// encapsulamento
+
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public Double getPrice() {
 		return price;
 	}
-	
+
 	public void setPrice(Double price) {
-		
+		this.price = price;
 	}
-	
-	//metodos
-	
+
+	// metodos
+
 	public String priceTag() {
-		return name + " $ " + price; 
+		return getName() + " $ " + getPrice();
 	}
-	
-	
-	
-	
+
 }
