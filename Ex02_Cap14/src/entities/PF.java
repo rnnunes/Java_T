@@ -1,39 +1,21 @@
 package entities;
 
-public class PF {
+public class PF extends Pessoa {
 	
-	//Atribuições
-	private String nome;
-	private Double rendaAnual;
+	//atributos
 	private Double gastosSaude;
 	
 	//Construtores
 	public PF() {
-		// TODO Auto-generated constructor stub
+		super();
 	}
 	
 	public PF(String nome, Double rendaAnual, Double gastosSaude) {
-		this.nome = nome;
-		this.rendaAnual = rendaAnual;
+		super(nome, rendaAnual);
 		this.gastosSaude = gastosSaude;
 	}
 	
 	//Encapsulamento
-	public String getNome() {
-		return nome;
-	}
-	
-	public void getNome(String nome) {
-		this.nome = nome;
-	}
-	
-	public Double getRendaAnual() {
-		return rendaAnual;
-	}
-	
-	public void setRendaAnual(Double rendaAnual) {
-		this.rendaAnual = rendaAnual;
-	}
 
 	public Double getGastosSaude() {
 		return gastosSaude;
@@ -45,25 +27,37 @@ public class PF {
 	
 	//metodos
 	
-	public Double PFImposto() {
+	public Double Imposto() {
 		
-		if (rendaAnual < 20000) {
+		double tx = 0;
+		if (getRendaAnual() < 20000.00) {
 			
-			double menos20k =+ rendaAnual * 0.15;
+			tx =+ getRendaAnual() * 0.15;
 			
-		} else if (rendaAnual > 20000) {
+		} else {
 			
-			double mais20k =+ rendaAnual * 0.25;
+			tx =+ getRendaAnual() * 0.25;
 			
-			if	(gastosSaude > 0) {
-				double saude = gastosSaude * 0.5;
-			}
-			
-		 	double var = mais20k - saude;
 		}
+		return tx;
 	}
 	
+	public Double descSaude() {
+		
+		double tx = 0;
+		if (getGastosSaude() > 0) {
+			
+			tx =+ getGastosSaude() * 0.5;
+		}
+		return tx;
+	}
 	
+	public Double totalPag() {
+		return Imposto() - descSaude();
+	}
 	
+	public String StringPag () {
+		return getNome() + " $ " + descSaude() + ", " + totalPag();
+	}
 
 }
