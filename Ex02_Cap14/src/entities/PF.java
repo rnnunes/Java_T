@@ -30,7 +30,7 @@ public class PF extends Pessoa {
 	public Double Imposto() {
 		
 		double tx = 0;
-		if (getRendaAnual() < 20000.00) {
+		if (getRendaAnual() <= 20000.00) {
 			
 			tx =+ getRendaAnual() * 0.15;
 			
@@ -45,7 +45,7 @@ public class PF extends Pessoa {
 	public Double descSaude() {
 		
 		double tx = 0;
-		if (getGastosSaude() > 0) {
+		if (getRendaAnual() > 20000.00 ) {
 			
 			tx =+ getGastosSaude() * 0.5;
 		}
@@ -57,7 +57,7 @@ public class PF extends Pessoa {
 	}
 	
 	public String StringPag () {
-		return getNome() + " $ " + descSaude() + ", " + totalPag();
+		return getNome() + " $ " + totalPag();
 	}
 
 }

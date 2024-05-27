@@ -25,8 +25,24 @@ public class PJ extends Pessoa {
 	}
 
 	//metodos
+
+	public Double Imposto() {
+		double tx = 0;
+		if (getNumFuncionarios() > 10) {
+			tx = 0.14;
+		} else {
+			tx = 0.16;
+		}
+		return tx;
+	}
+	
+	public Double totalPag() {
+		double total =  getRendaAnual() * Imposto();
+		return total;
+	}
+
 	public String StringPag () {
-		return getNome() + ", " + getRendaAnual() + ", " + getNumFuncionarios();
+		return getNome() + " $ " + String.format("%.2f", totalPag());
 	}
 
 }

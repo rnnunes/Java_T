@@ -1,9 +1,13 @@
 package entities;
 
 public class Pessoa {
+	
+	//atributos
 
 	private String nome;
 	private Double rendaAnual;
+	
+	//construtores
 	
 	public Pessoa() {
 		// TODO Auto-generated constructor stub
@@ -13,6 +17,8 @@ public class Pessoa {
 		this.nome = nome;
 		this.rendaAnual = rendaAnual;
 	}
+	
+	//encapsulamento
 
 	public String getNome() {
 		return nome;
@@ -30,6 +36,15 @@ public class Pessoa {
 		this.rendaAnual = rendaAnual;
 	}
 	
+	//metodos
+	
+	public Double Imposto() {
+		return 0.0;
+	}
+	
+	public Double totalPag() {
+		return 0.0;
+	}
 	
 	public String StringPag() {
 		return getNome() + getRendaAnual();
