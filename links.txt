@@ -1,0 +1,7 @@
+https://arthur-almeida.medium.com/consumindo-uma-api-de-maneira-simples-com-java-2a386010e4b9
+
+https://www.devmedia.com.br/apache-poi-manipulando-documentos-em-java/31778
+
+https://giulianabezerra.medium.com/criando-um-projeto-java-maven-no-eclipse-cf7326d4db37
+
+https://giulianabezerra.medium.com/gerenciando-dependencias-com-o-mavem-em-projetos-java-6703fce91fb6
