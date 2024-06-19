@@ -3,9 +3,9 @@ package entities;
 public class EntitiesCNPJ {
 
 	// atributos
-	String nome;
-	String situacao;
-	String tipo;
+	private String nome;
+	private String situacao;
+	private String tipo;
 
 	// construtores
 	public EntitiesCNPJ() {
